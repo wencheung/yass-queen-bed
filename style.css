@@ -1,0 +1,60 @@
+/* Selects all div elements where the parent element has a class container AKA all of the individual blocks in the grid */
+.container > div {
+  align-items: center;
+  /*border: solid blue thin;*/
+  color: black;
+  /*display: flex;*/
+  font-size: 1em;
+  justify-content: center;
+  font-family: 'Gentium Basic', serif;
+}
+
+html,
+body {
+  margin: 10px;
+}
+
+#titlebar {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 6em;
+    
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 150px repeat(3, 1fr);
+    /*margin: 10px;*/
+}
+
+#navbar, #footer {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    font-family: 'Shadows Into Light', cursive;
+    text-align: center;
+}
+
+#sidebar {
+    grid-row: span 2;
+    text-align: center;
+}
+
+#title {
+    grid-column: span 3;
+    text-align: center;
+}
+
+#content {
+    grid-column: span 3;
+    text-align: center;
+    list-style-position: inside;
+}
+
+h2 {
+    font-family: 'Eczar', serif;
+    font-size: 2em;
+}
+
+.tagline {
+    font-family: 'Eczar', serif;
+    font-size: 1em;
+}
